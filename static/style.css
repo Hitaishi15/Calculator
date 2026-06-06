@@ -1,6 +1,4 @@
-/* ============================================
-   MODERN CALCULATOR DESIGN - VIBRANT STYLE
-   ============================================ */
+
 
 :root {
     --primary-color: #1a1a2e;
@@ -66,10 +64,6 @@ body {
     transition: background 0.5s ease;
 }
 
-/* ============================================
-   CALCULATOR WRAPPER
-   ============================================ */
-
 .calculator-wrapper {
     width: 100%;
     max-width: 420px;
@@ -89,9 +83,6 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* ============================================
-   CALCULATOR HEADER WITH ICONS
-   ============================================ */
 
 .calculator-header {
     display: flex;
@@ -136,10 +127,6 @@ body {
     border-color: var(--operator-color);
 }
 
-/* ============================================
-   DISPLAY SECTION
-   ============================================ */
-
 .display-container {
     position: relative;
     margin-bottom: 28px;
@@ -180,9 +167,7 @@ body {
     filter: blur(6px);
 }
 
-/* ============================================
-   BUTTONS GRID
-   ============================================ */
+
 
 .buttons-grid {
     display: grid;
@@ -190,9 +175,7 @@ body {
     gap: 14px;
 }
 
-/* ============================================
-   BUTTON STYLES
-   ============================================ */
+
 
 .btn {
     position: relative;
@@ -244,9 +227,7 @@ body {
     justify-content: center;
 }
 
-/* ============================================
-   BUTTON HOVER & ACTIVE
-   ============================================ */
+
 
 .btn:hover {
     background: linear-gradient(135deg, #3d4571 0%, #353c5a 100%);
@@ -260,9 +241,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* ============================================
-   NUMBER BUTTONS
-   ============================================ */
+
 
 .btn-number {
     background: var(--btn-number-bg);
@@ -273,9 +252,7 @@ body {
     background: var(--btn-number-hover);
 }
 
-/* ============================================
-   OPERATOR BUTTONS
-   ============================================ */
+
 
 .btn-operator {
     background: linear-gradient(135deg, #ff8c42 0%, #ff7a1f 100%);
@@ -295,15 +272,12 @@ body {
     box-shadow: 0 4px 16px rgba(255, 140, 66, 0.3);
 }
 
-/* ============================================
-   FUNCTION BUTTONS
-   ============================================ */
+
 
 .btn-function {
     font-weight: 600;
 }
 
-/* CLEAR BUTTON */
 .btn-clear {
     background: linear-gradient(135deg, var(--clear-color) 0%, var(--clear-color) 100%);
     color: var(--text-primary);
@@ -315,7 +289,6 @@ body {
     border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* BACKSPACE BUTTON */
 .btn-backspace {
     background: linear-gradient(135deg, var(--clear-color) 0%, var(--clear-color) 100%);
     color: var(--text-primary);
@@ -327,9 +300,6 @@ body {
     border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* ============================================
-   EQUALS BUTTON
-   ============================================ */
 
 .btn-equals {
     background: linear-gradient(135deg, #ff8c42 0%, #ff7a1f 100%);
@@ -350,17 +320,12 @@ body {
     box-shadow: 0 4px 16px rgba(255, 140, 66, 0.3);
 }
 
-/* ============================================
-   ZERO BUTTON (SPAN 2 COLUMNS)
-   ============================================ */
 
 .btn-zero {
     grid-column: 1 / 3;
 }
 
-/* ============================================
-   ANIMATIONS
-   ============================================ */
+
 
 @keyframes slideUp {
     from {
@@ -390,11 +355,7 @@ body {
     animation: pulse 0.3s ease-out;
 }
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
 
-/* Tablet Devices (600px - 1024px) */
 @media (max-width: 768px) {
     .calculator {
         padding: 20px;
@@ -421,7 +382,7 @@ body {
     }
 }
 
-/* Mobile Devices (320px - 599px) */
+
 @media (max-width: 599px) {
     body {
         padding: 12px;
@@ -463,7 +424,7 @@ body {
     }
 }
 
-/* Small Phones (320px - 374px) */
+
 @media (max-width: 374px) {
     .calculator {
         padding: 12px;
@@ -497,9 +458,6 @@ body {
     }
 }
 
-/* ============================================
-   ACCESSIBILITY
-   ============================================ */
 
 .btn:focus-visible {
     outline: 2px solid var(--operator-color);
@@ -511,9 +469,6 @@ body {
     outline-offset: 2px;
 }
 
-/* ============================================
-   PRINT STYLES
-   ============================================ */
 
 @media print {
     body {
@@ -526,9 +481,7 @@ body {
     }
 }
 
-/* ============================================
-   DARK MODE (System Preference)
-   ============================================ */
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -537,9 +490,6 @@ body {
     }
 }
 
-/* ============================================
-   REDUCED MOTION
-   ============================================ */
 
 @media (prefers-reduced-motion: reduce) {
     * {
@@ -549,9 +499,6 @@ body {
     }
 }
 
-/* ============================================
-   HIGH CONTRAST MODE
-   ============================================ */
 
 @media (prefers-contrast: more) {
     .btn {
